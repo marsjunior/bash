@@ -30,7 +30,7 @@ if [ -n "$vazio" ]; then
 	done 
 
 	 if [ $comando_shell -eq 1 ]; then
-	 	/usr/bin/time -f "$comando %E, %U, %S" -ao "$home/.log_bash" echo $comando | bash
+	 	/usr/bin/time -f "$comando %e, %U, %S" -ao "$home/.log_bash" echo $comando | bash
 	 elif [ $comando_shell -eq 2 ]; then
 	 	$comando
 	 elif [ $comando_shell -eq 0 ];then
